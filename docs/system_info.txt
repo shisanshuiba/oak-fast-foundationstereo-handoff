@@ -1,0 +1,10 @@
+Generated: 2026-08-21 Asia/Shanghai
+OS: Microsoft Windows NT 10.0.26200.0
+DepthAI Python: Python 3.12.7
+FFS Python: Python 3.12.13
+torch=2.9.1+cu128
+cuda_runtime=12.8
+cuda_available=True
+gpu=NVIDIA GeForce RTX 5070 Ti Laptop GPU
+nvidia-smi:
+NVIDIA GeForce RTX 5070 Ti Laptop GPU, 591.86, 12227 MiB

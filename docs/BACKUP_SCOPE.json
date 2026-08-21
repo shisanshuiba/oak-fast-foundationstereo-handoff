@@ -1,0 +1,21 @@
+{
+  "name": "OAK_FFS_GitHub_Backup_20260821",
+  "visibility_recommendation": "private",
+  "contains": [
+    "capture scripts",
+    "Fast-FoundationStereo source snapshot and license",
+    "local pseudocolor script",
+    "one redacted sample input pair",
+    "lightweight sample outputs",
+    "depth evaluation report sources and results",
+    "environment locks and weight checksum"
+  ],
+  "excludes": [
+    "model weights",
+    "full dataset",
+    "PLY/NPY/PFM numerical outputs",
+    "virtual environments",
+    "credentials",
+    "device MXID and host-specific paths"
+  ]
+}

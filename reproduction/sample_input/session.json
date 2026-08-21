@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "dataset_format": "oak_fast_foundationstereo_v1",
+  "split": "train",
+  "session_id": "20260819_172516",
+  "source_session_file": "session_source.json",
+  "source_metadata_file": "metadata_source.csv",
+  "source_device": {
+    "name": "<redacted-device-ip>",
+    "mxid": "<redacted-device-mxid>",
+    "state": "XLinkDeviceState.X_LINK_BOOTED",
+    "protocol": "XLinkProtocol.X_LINK_TCP_IP",
+    "platform": "XLinkPlatform.X_LINK_MYRIAD_X"
+  },
+  "source_capture": {
+    "fps": 10,
+    "requested_frames": 0,
+    "sync_threshold_ms": 10.0,
+    "extended_disparity": true,
+    "left_right_check": true,
+    "depth_alignment": "RECTIFIED_LEFT",
+    "depth_unit": "millimeter",
+    "invalid_depth_value": 0,
+    "saturated_depth_value": 65535,
+    "png_compression": 1,
+    "measurement_roi_size": 11
+  },
+  "selection": {
+    "rule": "三路共同帧按编号排序，跳过前N组，在剩余区间约1/3和2/3位置各取一组",
+    "skip_first_complete_groups": 20,
+    "source_complete_groups": 62,
+    "candidate_groups_after_skip": 42,
+    "selected_frame_ids": [
+      "00000034",
+      "00000048"
+    ],
+    "selected_frames": 2,
+    "incomplete_tail_files_excluded": {}
+  },
+  "geometry": {
+    "width": 1280,
+    "height": 800,
+    "intrinsic_matrix": [
+      [
+        566.2761840820312,
+        0.0,
+        653.757080078125
+      ],
+      [
+        0.0,
+        566.0713500976562,
+        388.4054260253906
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "intrinsic_source": "calibration_active.json CAM_B fallback",
+    "baseline_m": 0.07508203029632568,
+    "depth_alignment": "RECTIFIED_LEFT",
+    "coordinate_convention": "DepthAI RDF: +X right, +Y down, +Z forward"
+  },
+  "labels": {
+    "depth_directory": "depth_mm",
+    "depth_unit": "millimeter",
+    "disparity_directory": "disparity_pfm",
+    "disparity_unit": "pixel",
+    "disparity_format": "single-channel little-endian float32 PFM; invalid=0",
+    "disparity_formula": "fx_px * baseline_m * 1000 / depth_mm",
+    "invalid_depth_value": 0,
+    "saturated_depth_value": 65535,
+    "valid_mask_directory": "valid_mask",
+    "label_type": "depthai_stereo_pseudo_ground_truth",
+    "warning": "该深度由同一对OAK左右图计算，是伪真值，不是独立外部真值。"
+  }
+}

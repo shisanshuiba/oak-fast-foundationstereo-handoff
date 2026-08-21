@@ -1,0 +1,38 @@
+# Environments and caches
+venv/
+.venv/
+.conda/
+envs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Models and generated engines
+weights/**/*.pth
+weights/**/*.pt
+weights/**/*.zip
+*.onnx
+*.engine
+
+# Large datasets and generated numerical outputs
+FastFoundationStereo_OAK_Dataset/
+recordings/
+datasets/
+*.ply
+*.npy
+*.pfm
+*.blob
+
+# Generated output folders
+output/
+output_docker/
+rerun_*/
+
