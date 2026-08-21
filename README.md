@@ -1,4 +1,4 @@
-# OAK PoE Stereo + Fast-FoundationStereo 复现备份
+# OAK PoE Stereo + Fast-FoundationStereo 备份
 
 这是工作交接用的轻量 GitHub 备份，包含：
 
